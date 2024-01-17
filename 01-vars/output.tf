@@ -13,7 +13,3 @@ output "second_value_list" {
 output "value_in_map" {
   value = var.v3["xyz"]
 }
-
-output "map" {
-  value = lookup(var.v3, "abc1", none)
-}
