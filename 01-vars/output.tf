@@ -15,5 +15,5 @@ output "value_in_map" {
 }
 
 output "value_in_map1" {
-  value = lookup(var.v3, "abc", none )
+  value = lookup(var.v3, "abc1", none )
 }
