@@ -19,5 +19,5 @@ output "value_in_map1" {
 }
 
 output "second_value_list1" {
-  value = element(var.v3, 4 )
+  value = element(var.v2, 4 )
 }
