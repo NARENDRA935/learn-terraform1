@@ -1,4 +1,4 @@
-resource "aws_instance" "component" {
+resource "aws_instance" "instances" {
   count                  = length(var.component)
   ami                    = data.aws_ami.centos8.image_id
   instance_type          = var.instance_type
@@ -15,7 +15,7 @@ resource "aws_route53_record" "records" {
   name    = "${element(var.component,count.index )}-dev"
   type    = "A"
   ttl     = 30
-  records =[element(aws_instance.component.*.private_ip,count.index )]
+  records =[element(aws_instance.instances.*.private_ip,count.index )]
 }
 
 
