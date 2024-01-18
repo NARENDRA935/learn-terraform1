@@ -11,5 +11,5 @@ variable "zone_id" {
 }
 
 variable "component" {
-  default = [ "frontend","backend", "mysql"]
+  default = [ "frontend","mysql", "backend"]
 }
