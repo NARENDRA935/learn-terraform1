@@ -8,8 +8,8 @@ variable "fruits1" {
 variable "fruits2" {
   default = {
     apple = {
-      name = "apple"
       quantity = 10
+      name = "apple"
     }
     banana = {
       name = "banana"
