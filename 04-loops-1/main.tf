@@ -7,7 +7,7 @@ output "test" {
 }
 
 variable "components" {
-  default = [frontend, backend, mysql]
+  default = ["frontend", "backend", "mysql"]
 }
 
 resource "aws_instance" "test" {
