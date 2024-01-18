@@ -12,7 +12,7 @@ variable "fruits2" {
       quantity = 10
     }
     banana = {
-      name = 'banana'
+      name = "banana"
       quantity = 100
 
     }
