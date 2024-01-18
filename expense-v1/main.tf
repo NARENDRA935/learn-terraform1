@@ -29,7 +29,7 @@ resource "aws_instance" "backend" {
 
 resource "aws_route53_record" "backend" {
   zone_id = "Z02327421CM6HX7FT19J5"
-  name    = "frontend-dev"
+  name    = "backend-dev"
   type    = "A"
   ttl     = 30
   records = [aws_instance.backend.private_ip]
@@ -48,7 +48,7 @@ resource "aws_instance" "mysql" {
 
 resource "aws_route53_record" "mysql" {
   zone_id = "Z02327421CM6HX7FT19J5"
-  name    = "frontend-dev"
+  name    = "mysql-dev"
   type    = "A"
   ttl     = 30
   records = [aws_instance.mysql.private_ip]
