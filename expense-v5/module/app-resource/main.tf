@@ -15,6 +15,5 @@ resource "aws_route53_record" "records" {
   ttl     = 30
   #records = [lookup(lookup(aws_instance.instances,each.key,null),"private_ip",null)]
   records = [aws_instance.instances.private_ip]
-}
 
 
