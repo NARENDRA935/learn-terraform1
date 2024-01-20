@@ -1,3 +1,5 @@
+
+resource "null_resource" "test" {}
 terraform {
   backend "s3" {
     bucket = "d14-terraform"
@@ -5,5 +7,3 @@ terraform {
     region = "us-east-1"
   }
 }
-
-resource "null_resource" "test" {}
